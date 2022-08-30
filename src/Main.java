@@ -1,8 +1,10 @@
+import array.Array;
 import stack.LinkedStack;
 import stack.Stack;
 
 public class Main {
     public static void main(String arg[]){
+        /*
         Stack<Integer> s = new Stack<>();
         s.push(5);
         s.push(10);
@@ -29,11 +31,33 @@ public class Main {
         boolean areBalanced2 = areBalanced(exp2);
         System.out.println(areBalanced2);
 
+         */
+
+        // ------------------------------------------------------------------------------------ //
+
+        Array<Integer> arr = new Array<Integer>(5);
+
+        arr.insert(0);
+        arr.insert(10);
+        arr.insert(20);
+        arr.insert(30);
+        arr.insert(40);
+
+
+        arr.removeAtPos(0);
+        arr.removeAtPos(1);
+        arr.removeAtPos(2);
+        arr.removeAtPos(1);
+        arr.removeAtPos(0);
+        System.out.println(arr.isFull());
+        arr.print();
+
 
     }
+}
 
 
-
+/*
     static boolean arePair(char open, char close){
         if (open == '(' && close == ')'){
             return true;
@@ -62,3 +86,5 @@ public class Main {
         return s.isEmpty() ? true : false;
     }
 }
+
+ */
