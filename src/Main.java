@@ -1,4 +1,5 @@
 import array.Array;
+import queue.LinkedQueue;
 import queue.Queue;
 import stack.LinkedStack;
 import stack.Stack;
@@ -54,7 +55,7 @@ public class Main {
          */
 
         // =================================================================================//
-
+/*
         Queue<Integer> q = new Queue<>(5);
         q.enqueue(0);
         q.enqueue(10);
@@ -67,7 +68,23 @@ public class Main {
         q.print();
         System.out.println(q.search(50));
 
+ */
 
+        // =================================================================================//
+
+        LinkedQueue<Integer> lq= new LinkedQueue<Integer>();
+        System.out.println(lq.getFront());
+        System.out.println(lq.getRear());
+        lq.enqueue(10);
+        lq.enqueue(20);
+        lq.enqueue(30);
+        lq.dequeue();
+        //lq.clear();
+        lq.print();
+        System.out.println("---------------");
+        System.out.println(lq.getFront());
+        System.out.println(lq.getRear());
+        System.out.println(lq.getSize());
 
 
     }
