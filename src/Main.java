@@ -1,4 +1,5 @@
 import array.Array;
+import linked_list.LinkedList;
 import queue.LinkedQueue;
 import queue.Queue;
 import stack.LinkedStack;
@@ -72,6 +73,8 @@ public class Main {
 
         // =================================================================================//
 
+        /*
+
         LinkedQueue<Integer> lq= new LinkedQueue<Integer>();
         System.out.println(lq.getFront());
         System.out.println(lq.getRear());
@@ -85,6 +88,28 @@ public class Main {
         System.out.println(lq.getFront());
         System.out.println(lq.getRear());
         System.out.println(lq.getSize());
+
+         */
+
+        // =================================================================================//
+
+
+        LinkedList li = new LinkedList<Integer>();
+        li.insertAtFirst(10);
+        li.insertAtFirst(5);
+        li.insertAtEnd(15);
+        li.insertAtEnd(20);
+        li.insertAtPos(4,25);
+        li.removeEnd();
+        li.reverse();
+        System.out.println(li.search(15));
+        li.remove(25);
+        li.remove(15);
+        li.remove(5);
+        li.remove(10);
+        li.remove(20);
+        li.print();
+
 
 
     }
