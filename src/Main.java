@@ -1,4 +1,5 @@
 import array.Array;
+import queue.Queue;
 import stack.LinkedStack;
 import stack.Stack;
 
@@ -35,15 +36,13 @@ public class Main {
 
         // ------------------------------------------------------------------------------------ //
 
+        /*
         Array<Integer> arr = new Array<Integer>(5);
-
         arr.insert(0);
         arr.insert(10);
         arr.insert(20);
         arr.insert(30);
         arr.insert(40);
-
-
         arr.removeAtPos(0);
         arr.removeAtPos(1);
         arr.removeAtPos(2);
@@ -51,6 +50,24 @@ public class Main {
         arr.removeAtPos(0);
         System.out.println(arr.isFull());
         arr.print();
+
+         */
+
+        // =================================================================================//
+
+        Queue<Integer> q = new Queue<>(5);
+        q.enqueue(0);
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        q.enqueue(40);
+
+        System.out.println(q.getFront());
+        System.out.println(q.getRear());
+        q.print();
+        System.out.println(q.search(50));
+
+
 
 
     }
