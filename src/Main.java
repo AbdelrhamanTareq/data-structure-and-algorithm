@@ -1,4 +1,5 @@
 import array.Array;
+import doubly_linked_list.DoublyLinkedList;
 import linked_list.LinkedList;
 import queue.LinkedQueue;
 import queue.Queue;
@@ -94,6 +95,7 @@ public class Main {
         // =================================================================================//
 
 
+        /*
         LinkedList li = new LinkedList<Integer>();
         li.insertAtFirst(10);
         li.insertAtFirst(5);
@@ -109,6 +111,24 @@ public class Main {
         li.remove(10);
         li.remove(20);
         li.print();
+
+         */
+
+        // =================================================================================//
+
+        DoublyLinkedList dli = new DoublyLinkedList<Integer>();
+        dli.insertFirst(30);
+        dli.insertLast(40);
+        dli.insertLast(50);
+        dli.insertAt(3,100);
+        dli.insertAt(1,200);
+        //dli.remove(40);
+        //dli.removeLast();
+
+        dli.print();
+        System.out.println("--------------------------");
+
+        dli.reverse();
 
 
 
