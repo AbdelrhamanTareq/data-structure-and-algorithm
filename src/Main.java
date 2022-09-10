@@ -1,10 +1,5 @@
-import array.Array;
-import doubly_linked_list.DoublyLinkedList;
-import linked_list.LinkedList;
-import queue.LinkedQueue;
-import queue.Queue;
-import stack.LinkedStack;
-import stack.Stack;
+import tree.Tree;
+
 
 public class Main {
     public static void main(String arg[]){
@@ -116,6 +111,8 @@ public class Main {
 
         // =================================================================================//
 
+        /*
+
         DoublyLinkedList dli = new DoublyLinkedList<Integer>();
         dli.insertFirst(30);
         dli.insertLast(40);
@@ -129,6 +126,33 @@ public class Main {
         System.out.println("--------------------------");
 
         dli.reverse();
+
+         */
+
+        // =================================================================================//
+
+        Tree<Integer> tree = new Tree<>();
+
+        tree.insert(10);
+        tree.insert(5);
+        tree.insert(20);
+        tree.insert(15);
+        tree.insert(50);
+        tree.insert(3);
+        tree.insert(9);
+        System.out.println(tree.search(10));
+        tree.delete(10);
+
+        //tree.traverseInOrder();
+        //System.out.println("----------------------------");
+        tree.traversePreOrder();
+        System.out.println("----------------------------");
+        //tree.traversePostOrder();
+
+        tree.traversLevelOrder();
+        System.out.println(tree.findMinuiumValue());
+        System.out.println(tree.findMaxmiumValue());
+
 
 
 

@@ -10,7 +10,7 @@ public class LinkedQueue<T> {
         this.length = 0;
     }
 
-    boolean isEmpty(){
+   public boolean isEmpty(){
         /*
         if(rear == null){
 
