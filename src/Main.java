@@ -1,3 +1,4 @@
+import heap.MaxHeap;
 import tree.Tree;
 
 
@@ -131,6 +132,7 @@ public class Main {
 
         // =================================================================================//
 
+        /*
         Tree<Integer> tree = new Tree<>();
 
         tree.insert(10);
@@ -153,6 +155,21 @@ public class Main {
         System.out.println(tree.findMinuiumValue());
         System.out.println(tree.findMaxmiumValue());
 
+
+
+        */
+
+        // =================================================================================//
+
+        MaxHeap maxHeap = new MaxHeap(6);
+        maxHeap.insert(3);
+        maxHeap.insert(10);
+        maxHeap.insert(5);
+        maxHeap.insert(1);
+        maxHeap.insert(50);
+        maxHeap.insert(2);
+        maxHeap.deleteRoot();
+        maxHeap.print();
 
 
 
