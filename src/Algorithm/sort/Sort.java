@@ -9,7 +9,7 @@ public class Sort {
 
     public static Sort getInstance() {
         if (instance == null) {
-            return new Sort();
+            return instance = new Sort();
         }
         return instance;
     }

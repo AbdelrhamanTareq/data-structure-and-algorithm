@@ -1,3 +1,4 @@
+import Algorithm.search.Search;
 import Algorithm.sort.Sort;
 import heap.MaxHeap;
 import tree.Tree;
@@ -177,6 +178,8 @@ public class Main {
 
         // =================================================================================//
 
+        /*
+
         int[] arr1 =  {1,2,50,33,52,0,-10,66,-2,31,10,20};
 
         Sort sort = Sort.getInstance();
@@ -216,6 +219,22 @@ public class Main {
         for (int i = 0; i < arr1.length; i++) {
             System.out.println(arr1[i]);
         }
+
+         */
+
+        int[] arr2 = {5,10,4,33,5,8,70,188,-20};
+        Search search = Search.getInstance();
+        System.out.println("---------linear search----------");
+        System.out.println(search.linearSearch(arr2,8));
+        System.out.println(search.linearSearch(arr2,88));
+
+        int[] arr3 = {5,10,15,20,25,70,188};
+        System.out.println("---------binary search----------");
+        System.out.println(search.linearSearch(arr2,188));
+        System.out.println(search.linearSearch(arr2,88));
+
+
+
 
 
 
