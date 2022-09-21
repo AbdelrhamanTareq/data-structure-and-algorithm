@@ -2,9 +2,9 @@
 
 ## data structure
 
-# <li> Stack
-# <li> Queue
-# <li> Linked list
-# <li> Array
-# <li> Tree
-# <li> Heap
+ <li> Stack
+ <li> Queue
+ <li> Linked list
+ <li> Array
+ <li> Tree
+ <li> Heap
