@@ -1,3 +1,4 @@
+import Algorithm.sort.Sort;
 import heap.MaxHeap;
 import tree.Tree;
 
@@ -161,6 +162,7 @@ public class Main {
 
         // =================================================================================//
 
+        /*
         MaxHeap maxHeap = new MaxHeap(6);
         maxHeap.insert(3);
         maxHeap.insert(10);
@@ -170,6 +172,52 @@ public class Main {
         maxHeap.insert(2);
         maxHeap.deleteRoot();
         maxHeap.print();
+
+         */
+
+        // =================================================================================//
+
+        int[] arr1 =  {1,2,50,33,52,0,-10,66,-2,31,10,20};
+
+        Sort sort = Sort.getInstance();
+
+        System.out.println("----------  selection  ----------------");
+        sort.selectionSort(arr1);
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
+        }
+
+
+        System.out.println("----------  bubble  ----------------");
+        sort.bubbleSort(arr1);
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
+        }
+
+
+
+
+        System.out.println("----------  insertion  ----------------");
+        sort.inserationSort(arr1);
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
+        }
+
+
+        System.out.println("----------  Quick  ----------------");
+        sort.quickSort(arr1,0, arr1.length - 1);
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
+        }
+
+
+        System.out.println("----------  merge  ----------------");
+        sort.mergeSort(arr1,0, arr1.length - 1);
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
+        }
+
+
 
 
 
