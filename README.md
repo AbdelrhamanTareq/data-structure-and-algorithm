@@ -1,6 +1,6 @@
 ### data structure and algorithm in Java
 
-## data structure
+## Data Structure
 
  <li> Stack
  <li> Queue
@@ -8,3 +8,10 @@
  <li> Array
  <li> Tree
  <li> Heap
+  
+ 
+## Algorithm
+
+ <li> Sorting Algorithm
+ <li> Searching Algorithm
+
